@@ -15,7 +15,7 @@ public class Sale {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String SallerName;
+	private String SellerName;
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
@@ -24,6 +24,8 @@ public class Sale {
 	public Sale() {
 
 	}
+
+	
 
 	public Long getId() {
 		return id;
@@ -34,11 +36,11 @@ public class Sale {
 	}
 
 	public String getSallerName() {
-		return SallerName;
+		return SellerName;
 	}
 
 	public void setSallerName(String sallerName) {
-		SallerName = sallerName;
+		SellerName = sallerName;
 	}
 
 	public Integer getVisited() {
